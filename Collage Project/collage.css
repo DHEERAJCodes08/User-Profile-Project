@@ -1,0 +1,471 @@
+/*******************************************************\  Starting with our  Styling Codes  /*************************************************************** */
+
+
+/* IMPORTED Fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Playfair+Display+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Josefin+Sans&display=swap');
+
+
+/*******************************************************\  Genral Styling /*************************************************************** */
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*******************************************************\  Whole Container Styling  /*************************************************************** */
+
+
+body{
+/*  min-height: 100vh;
+    margin: 5px; */
+     background-color: rgb(211, 225, 244) 
+}
+
+.Container{
+    display:grid;    
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:8% 45% 70%;
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 95%;
+    height:90vh;
+    margin: 0px 20px 0px 40px;
+
+    
+}
+
+.Container > section{
+    border-radius: 8px;
+    background-color: rgba(228, 225, 233, 0.696);
+    box-shadow: 0px 0px 5px rgba(29, 29, 29, 0.463);
+   /*  box-shadow: 0px 0px 10px rgb(190, 211, 238); */
+  /*  background-color: rgb(234, 237, 243) */
+}
+
+
+ 
+
+/**************************************************************\ Styling of Sections  /***********************************************************************/
+
+
+
+/*******************************************************\  Complete Styling of Section 1  /****************************************************************/
+
+
+.sect-1{
+    order: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.logo-box{
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 0px 10px;
+}
+
+.social-links{
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+}
+
+.social-links li{
+    list-style-type: none;
+    color: rgb(0, 110, 255);
+}
+
+.social-links li:hover{
+    color: black;
+    transition: 1s;
+    
+    
+}
+
+
+
+/*******************************************************\  Complete Styling of Section 2  /*************************************************************** */
+
+
+.sect-2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;  
+    
+}
+    /* Profile Styling */
+.profile img{
+    border: 3px solid rgb(232, 232, 234);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(133, 135, 137);
+
+}
+
+
+/*******************************************************\  Complete Styling of Section 3  /*************************************************************** */
+
+
+.sect-3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    order:3 ;
+    padding: 20px;
+}
+
+.heading-1{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(68, 67, 67);
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    padding:15px 0px 15px 0px;
+    font-size: 0.7rem;
+
+}
+
+.primary-data{
+    padding: 0px 15px 0px 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Secondary-data{
+    padding: 0px 15px 0px 0px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+h3{
+    padding: 0px 0px 9px 0px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    
+}
+
+.data1{
+    font-weight: 400;
+    padding: 5px;
+    background-color: rgba(173, 220, 249, 0.836);
+    border: 1.5px solid rgba(174, 218, 246, 0.836);
+    color: rgb(0, 110, 255);
+    border-radius:5px ;
+}
+
+p{
+    font-weight: 500;
+    color:rgb(45, 45, 45);
+    padding:0px 0px 20px 0px;
+}
+
+
+.heading-2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(68, 67, 67);
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Playfair Display SC', serif;
+    padding:0px 0px 15px 0px;
+    font-size: 0.7rem;
+}
+
+
+
+
+.skill-list{
+    color:rgb(39, 39, 39);
+    font-size: 0.95rem;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*******************************************************\ Complete Styling of Section 4 /*************************************************************** */
+
+
+.sect-4{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: space-evenly;
+    order: 2;
+    padding: 0px 0px 10px 30px;
+    
+}
+.name-cont{
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    padding:0;
+    align-items: center;
+   margin-left:3px;
+}
+.name-text{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.name{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+    justify-content: space-between;
+
+}
+
+.place{
+    font-size: 0.9rem;
+    font-family: 'Castoro Titling', cursive;
+    font-weight: bold;
+    color:black;
+    letter-spacing:1px;
+    word-spacing: 1.5px;
+   
+}
+
+
+.father,
+.mother{
+    letter-spacing: 1.1px;
+    word-spacing: 1.5px;
+    margin-top: 15%;
+    font-weight: bold;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.PRN{
+    display: flex;
+    margin-top: 30px;
+}
+
+.prn-num,
+.prn-data{
+    margin-left: 1%;    
+    font-weight: bold;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+
+}
+
+.parents-name{
+    display: flex;
+    height: 30px;
+    display: flex;
+    flex-flow:row ;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.button-cont{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 30px;
+   
+}
+a{
+    text-decoration: none;
+}
+
+.btn{
+    color: black;
+    margin:10px ;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1.5px 5px  rgba(0, 0, 0, 0.416);
+    
+
+    
+}
+
+
+.btn:hover:not(.active){
+/*    color: rgb(0, 110, 255); 
+   background-color: rgb(255, 255, 255); */
+   color: rgb(255, 255, 255);
+   background-color:rgb(0, 110, 255); 
+   transition: 0.15s linear;
+
+}
+
+
+
+
+
+ 
+
+/*******************************************************\  Complete Styling of Section 5  /*************************************************************** */
+
+
+.sect-5{
+    order: 4;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    padding: 10px;
+
+    
+}
+
+#icons{
+    font-size: 0.9rem;
+}
+
+.fetch-button-cont{
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(0, 110, 255);
+    gap: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    padding:7px 10px 7px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+
+
+
+
+
+
+.contact-info-all,
+.basic-info-all,
+.Course-info-all,
+.qualification-info-all{
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: column;    
+    padding: 15px;
+
+}
+.info-headings{
+    text-decoration:underline;
+    text-shadow: 0px 0px 3px rgba(20, 20, 20, 0.633);
+    font-size: 1.3rem;
+    padding: none; 
+    word-spacing: 5px;
+
+}
+
+.Basic-heading,
+.contact-heading,
+.Course-heading,
+.Qualification-heading,
+.About-heading{
+    color:rgb(0, 0, 0) ;
+    padding: 10px 10px 10px 0px;
+    
+}
+
+.Basic-heading{
+    margin-top:10px ;
+}
+
+
+.li-info{
+    display: flex;
+    flex-direction: row;
+    gap: 210px;
+    
+
+    
+}
+
+.detail{ 
+    font-size: 0.8rem;
+    font-family: 'Signika Negative', sans-serif;  
+    font-weight: 580;
+}
+
+
+
+
+/********************************************************\  We will be Adding the Active Tag using the Java Script /*****************************************************/
+
+
+
+.Content{                   /*  normallly all the Contents Will be Not displayed  */
+    display: none;
+}
+
+
+.Content.active{         /* the Cuntent with the Active Tag only will be Displayed  */
+display: block;
+}
+
+.btn.active{                         /* here it means the button which is contaning the Active class will be using this Property */
+    color: rgb(0, 110, 255); 
+
+}
+
+
+
+
+
+
+
+
+
